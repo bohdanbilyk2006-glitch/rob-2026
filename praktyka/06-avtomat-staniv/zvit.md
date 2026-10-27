@@ -29,7 +29,7 @@
 | Перевірка таймаута | Тимчасово встановлено поріг 101%. Через 20 с у `pidhid` робот зупинився. Загальний час 24,8 с |
 | Запуск на відео | Підхід на 4,7 с, зупинка на 5,7 с, завершення на 8,7 с. Підсумковий час у консолі 8,8 с |
 
-[Відео, 18,97 с](https://drive.google.com/file/d/1DSlBOoJEajXnIudVXkumVPXCXyFVUQEH/view?usp=sharing). [Програма](misiya.py).
+[Відео](https://drive.google.com/file/d/1DSlBOoJEajXnIudVXkumVPXCXyFVUQEH/view?usp=sharing). [Програма](misiya.py).
 
 **Розбір:**
 
