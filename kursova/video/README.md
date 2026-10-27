@@ -5,7 +5,7 @@
 
 | Що | Посилання |
 |---|---|
-| Відео тижня 6 |[Відео](https://drive.google.com/file/d/1DSlBOoJEajXnIudVXkumVPXCXyFVUQEH/view?usp=sharing)|
+| Відео тижня 6 |[Відео](https://drive.google.com/file/d/1l6RI8D_SrR8iQ9a0OIUzzPoX9ojRAkQU/view?usp=drive_link)|
 | Прогін 1 (тиждень 9) | |
 | Прогін 2 (тиждень 9) | |
 | Працюючий прогін (тиждень 13) | |
