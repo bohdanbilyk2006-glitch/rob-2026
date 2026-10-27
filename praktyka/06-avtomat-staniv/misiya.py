@@ -2,20 +2,26 @@ from ev3dev2.motor import MoveTank, OUTPUT_A, OUTPUT_B, SpeedPercent
 from ev3dev2.sensor import INPUT_1, INPUT_2
 from ev3dev2.sensor.lego import ColorSensor, UltrasonicSensor
 import time
+import math
 
 tank = MoveTank(OUTPUT_A, OUTPUT_B)
 color = ColorSensor(INPUT_1)
 ultra = UltrasonicSensor(INPUT_2)
 PORIH_PIDHODU = 45
 PORIH_MITKY = 67
+ZAIZD_CM = 18
+DIAMETR_KOLESA = 5.6
 TIMEOUT_STANU = 20
 LIMIT_MISIYI = 90
 
 
 def chervone():
     r, g, b = color.rgb
-    suma = r + g + b
-    return 100 * r / suma if suma > 0 else 0
+    return 100 * r / (r + g + b) if r + g + b > 0 else 0
+
+
+def polozhennya_kolis():
+    return (tank.left_motor.position + tank.right_motor.position) / 2
 
 
 def perekhid(novyi, prychyna):
@@ -32,6 +38,7 @@ pochatok = time.time()
 vkhid = pochatok
 stan = "poshuk"
 uspikh = False
+pochatok_mitky = None
 print("Старт: poshuk")
 
 while stan != "gotovo":
@@ -53,13 +60,20 @@ while stan != "gotovo":
         if r >= PORIH_PIDHODU:
             perekhid("pidhid", "частка червоного %.1f%%" % r)
         else:
-            tank.on(SpeedPercent(2), SpeedPercent(2))
+            tank.on(SpeedPercent(5), SpeedPercent(5))
 
     elif stan == "pidhid":
-        if r >= PORIH_MITKY:
-            perekhid("zupynka", "мітка %.1f%%" % r)
+        # Відлік 18 см починається лише після виявлення червоної мітки.
+        if pochatok_mitky is None and r >= PORIH_MITKY:
+            pochatok_mitky = polozhennya_kolis()
+            print("%.1f с: мітку знайдено, заїжджаю на 18 см" % (zaraz - pochatok))
+        proydeno = 0
+        if pochatok_mitky is not None:
+            proydeno = (polozhennya_kolis() - pochatok_mitky) * math.pi * DIAMETR_KOLESA / 360
+        if proydeno >= ZAIZD_CM:
+            perekhid("zupynka", "заїзд %.1f см; червоне %.1f%%" % (proydeno, r))
         else:
-            tank.on(SpeedPercent(1), SpeedPercent(1))
+            tank.on(SpeedPercent(4), SpeedPercent(4))
 
     elif stan == "zupynka":
         if r < PORIH_MITKY:
