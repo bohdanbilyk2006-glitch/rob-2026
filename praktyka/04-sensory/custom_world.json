@@ -1,0 +1,547 @@
+{
+  "worldName": "custom",
+  "options": {
+    "imageURL": "textures/maps/custom.png",
+    "groundType": "box",
+    "imageScale": 6,
+    "uScale": 1,
+    "vScale": 1,
+    "wall": true,
+    "wallHeight": 20,
+    "wallThickness": 5,
+    "wallColor": "#707070",
+    "timer": "down",
+    "timerDuration": 90,
+    "timerEnd": "stopRobot",
+    "startPos": "center",
+    "startPosXYZStr": "-260,-250,0",
+    "startRotStr": "0",
+    "objects": [
+      {
+        "type": "box",
+        "position": [
+          0,
+          0,
+          0.01
+        ],
+        "size": [
+          600,
+          600,
+          0.02
+        ],
+        "color": "#FFFFFF",
+        "physicsOptions": false
+      },
+      {
+        "type": "box",
+        "position": [
+          -195,
+          -170,
+          0.03
+        ],
+        "size": [
+          50,
+          260,
+          0.02
+        ],
+        "color": "#D0D0D0",
+        "physicsOptions": false
+      },
+      {
+        "type": "box",
+        "position": [
+          -217.5,
+          -170,
+          10
+        ],
+        "size": [
+          5,
+          260,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          -172.5,
+          -170,
+          10
+        ],
+        "size": [
+          5,
+          260,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          -195,
+          -42.5,
+          10
+        ],
+        "size": [
+          50,
+          5,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          -195,
+          170,
+          0.03
+        ],
+        "size": [
+          50,
+          260,
+          0.02
+        ],
+        "color": "#D0D0D0",
+        "physicsOptions": false
+      },
+      {
+        "type": "box",
+        "position": [
+          -217.5,
+          170,
+          10
+        ],
+        "size": [
+          5,
+          260,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          -172.5,
+          170,
+          10
+        ],
+        "size": [
+          5,
+          260,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          -195,
+          42.5,
+          10
+        ],
+        "size": [
+          50,
+          5,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          -65,
+          -170,
+          0.03
+        ],
+        "size": [
+          50,
+          260,
+          0.02
+        ],
+        "color": "#D0D0D0",
+        "physicsOptions": false
+      },
+      {
+        "type": "box",
+        "position": [
+          -87.5,
+          -170,
+          10
+        ],
+        "size": [
+          5,
+          260,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          -42.5,
+          -170,
+          10
+        ],
+        "size": [
+          5,
+          260,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          -65,
+          -42.5,
+          10
+        ],
+        "size": [
+          50,
+          5,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          -65,
+          170,
+          0.03
+        ],
+        "size": [
+          50,
+          260,
+          0.02
+        ],
+        "color": "#D0D0D0",
+        "physicsOptions": false
+      },
+      {
+        "type": "box",
+        "position": [
+          -87.5,
+          170,
+          10
+        ],
+        "size": [
+          5,
+          260,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          -42.5,
+          170,
+          10
+        ],
+        "size": [
+          5,
+          260,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          -65,
+          42.5,
+          10
+        ],
+        "size": [
+          50,
+          5,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          65,
+          -170,
+          0.03
+        ],
+        "size": [
+          50,
+          260,
+          0.02
+        ],
+        "color": "#D0D0D0",
+        "physicsOptions": false
+      },
+      {
+        "type": "box",
+        "position": [
+          42.5,
+          -170,
+          10
+        ],
+        "size": [
+          5,
+          260,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          87.5,
+          -170,
+          10
+        ],
+        "size": [
+          5,
+          260,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          65,
+          -42.5,
+          10
+        ],
+        "size": [
+          50,
+          5,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          65,
+          170,
+          0.03
+        ],
+        "size": [
+          50,
+          260,
+          0.02
+        ],
+        "color": "#D0D0D0",
+        "physicsOptions": false
+      },
+      {
+        "type": "box",
+        "position": [
+          42.5,
+          170,
+          10
+        ],
+        "size": [
+          5,
+          260,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          87.5,
+          170,
+          10
+        ],
+        "size": [
+          5,
+          260,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          65,
+          42.5,
+          10
+        ],
+        "size": [
+          50,
+          5,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          195,
+          -170,
+          0.03
+        ],
+        "size": [
+          50,
+          260,
+          0.02
+        ],
+        "color": "#D0D0D0",
+        "physicsOptions": false
+      },
+      {
+        "type": "box",
+        "position": [
+          172.5,
+          -170,
+          10
+        ],
+        "size": [
+          5,
+          260,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          217.5,
+          -170,
+          10
+        ],
+        "size": [
+          5,
+          260,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          195,
+          -42.5,
+          10
+        ],
+        "size": [
+          50,
+          5,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          195,
+          170,
+          0.03
+        ],
+        "size": [
+          50,
+          260,
+          0.02
+        ],
+        "color": "#D0D0D0",
+        "physicsOptions": false
+      },
+      {
+        "type": "box",
+        "position": [
+          172.5,
+          170,
+          10
+        ],
+        "size": [
+          5,
+          260,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          217.5,
+          170,
+          10
+        ],
+        "size": [
+          5,
+          260,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          195,
+          42.5,
+          10
+        ],
+        "size": [
+          50,
+          5,
+          20
+        ],
+        "color": "#707070",
+        "physicsOptions": "fixed"
+      },
+      {
+        "type": "box",
+        "position": [
+          -260,
+          -250,
+          0.05
+        ],
+        "size": [
+          30,
+          30,
+          0.02
+        ],
+        "color": "#3366DD",
+        "physicsOptions": false
+      },
+      {
+        "type": "box",
+        "position": [
+          130,
+          250,
+          0.05
+        ],
+        "size": [
+          30,
+          30,
+          0.02
+        ],
+        "color": "#FF0000",
+        "physicsOptions": false
+      }
+    ]
+  }
+}
